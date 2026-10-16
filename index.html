@@ -25,30 +25,43 @@
 <div id="container">
 
 
-<table cellspacing=0 cellpadding=15> 
+<table class="hero" cellspacing=0 cellpadding=0> 
 <tr>
-<td valign="bottom" align="center">
-<div>
-<img valign="bottom" alt="Anthony Huang" border=0 src="img/scorpion.jpeg" style="box-shadow: 10px 10px 5px grey;" width="95%"> 
+<td class="hero-pic" valign="bottom" align="left">
+<img class="portrait" valign="bottom" alt="A small dog standing beside a hedgehog in a lantern cage" border=0 src="img/hedgehot.JPG" style="box-shadow: 10px 10px 5px grey;" width="240"> 
 <!-- <br>
 <p style="margin-top: 0px;"> 
 <font size="2.0rem" color="#222">
 A Scropio's Self-Portrait </font>
 </p>
 -->
-</div>
 </td>
-<td valign="middle" width="60%">
+<td class="hero-text" valign="middle" align="left">
 <p align="left">
 <font size="6.5rem" face='Droid Serif'>Anthony&nbsp;Huang</font><br>
 Class of 2027 &nbsp;@
 <a href="https://www.isb.cn/" target="_blank">International School of Beijing</a><br>
-<p>I was born in Seattle, WA.  I moved with parents to Beijing at age of 2/3 :) 
+<p>I was born in Seattle, WA. I moved with parents and my brother to Beijing at age of 2/3 :) 
+
 </p>
+
+</td>
+</tr>
+</table>
+
+<div class="hero-gap"></div>
 
 <table><tr>
 <td><form action="index.html#">  <a href="index.html#research"
 			 class="btn"><span><span>Activities</span></span></a></form></td>
+<td><form action="index.html#"> <a href="index.html#game"
+				class="btn"><span><span>Game</span></span></a></form></td>
+<td><form action="index.html#"> <a href="index.html#bjpress"
+				class="btn"><span><span>BJPress</span></span></a></form></td>
+<td><form action="index.html#"> <a href="index.html#photography"
+				class="btn"><span><span>Photography</span></span></a></form></td>
+<td><form action="index.html#"> <a href="index.html#writing"
+				class="btn"><span><span>Poems</span></span></a></form></td>
 <td><form action="index.html#"> <a href="index.html#music"
 				class="btn"><span><span>Music</span></span></a></form></td>
 <td><form action="index.html#"> <a href="index.html#readings"
@@ -60,10 +73,6 @@ Class of 2027 &nbsp;@
 <td><form action="index.html#"> <a href="docs/Anthony_CV.pdf" target="_blank"
 				class="btn"><span><span>resume</span></span></a></form></td>	
 		</tr>
-</table>
-
-</td>
-</tr>
 </table>
 
 <p align=left>
@@ -81,13 +90,10 @@ Class of 2027 &nbsp;@
 		Don't they evoke the same sense of gravitas as that of the terra-cotta warriors? Can you tell a cicada's gender from its exoskeleton (shell)? Well, I can :)<img src="img/cicada001.jpg" width="360px" style="float:left; padding: 10px">  </img>
 	I have had this natural curiosity since very young, probably under the influence of my father. 
 
-	<p>Later on this natural curiosity has evolved into intellectual curiosity.
-		For example, I once dove deep into the Robustness of CNNs to Test-TimeImage Degradation on Fashion-MNIST and wrote up a <a href="docs/ds_ai.pptx" target="_blank">report</a> on it. 
-
-	<p> In addition, I like to create things. I once built among other things a turtle-walking harness that had allowed my pet turtle to play around freely in the pond while my brother and I easily tracked its whereabouts. 
+	<p>I like to create things. I once built among other things a turtle-walking harness that had allowed my pet turtle to play around freely in the pond while my brother and I easily tracked its whereabouts. 
 	<p>Over time, my curiosity and creativity have made me to become obsessed with AI and vision: human vision and computer vision. When volunteering to read for the blind kids 
 	at <a href="http://www.hongdandan.org.cn/">HongDanDan Charity Center for the Visually Impaired</a>, I came to realize that the typical 
-   cane used by the blind is just dumb and at best a stiff extension to one&#39;s arms. Thus, it was natural for me to come up with the idea of a smart cane POC system in the Robotics class. 
+   cane used by the blind is just dumb and at best a stiff extension to one&#39;s arms. Thus, it was natural for me to come up with the idea of an AI Navigation cane POC system in the Robotics class. 
    <p><img src="img/smart_cane.jpg" width="200px" style="float:left; padding: 10px"></img> The ideal system should be able to &quot;see&quot; the approaching objects and &quot;warn&quot; the user, so a webcam and speakers were added. To complete the reflex arc, a &quot;brain&quot; was needed, therefore a Raspberry PI4B chip was 
 installed, with Twister OS (a linux version for embedded systems).<img src="img/box02.jpg" width="300px" style="float:right; padding: 10px"></img> But how to detect an approaching object&#39;s distance? Searching for something like a bat&#39;s echo-locator, I was pleased to find that ultrasonic sensors could work.
  But an ultrasonic sensor receives ECHOs at 3.5 volts, different than the chip&#39;s working voltage of 5.<p> After some brainstorming, I designed a circuit to adjust the voltage using a breadboard and jumpers&#39; approach. <img src="img/total.jpg" width="300px" style="float:right; padding: 10px"></img>
@@ -97,28 +103,79 @@ installed, with Twister OS (a linux version for embedded systems).<img src="img/
 
 Through this I have learned that creativity alone does not necessarily make me a successful innovator, and that it requires a chaperone named &quot;hard work&quot; to recruit good luck and serendipity. 
 <p>One of the key technologies used was AI driven object recognition from a real-time video frame.
-	<p> <img src="img/retina.jpg" width="400px" style="float:left; padding: 10px">My passion with AI and vision led me to AI medicine. I am doing an internship at the AI core team of <a href="https://www.airdoc.com" target="_blank">Airdoc Corp.</a>, a pioneer in AI medicine, working on models to improve disease prediction 
-		precision based on retinal imaging. Our models help predict dozens of diseases including diabetes, glaucoma, AMD, dementia, and infarctions. My IB Extended Essay is about comparing different loss functions on retinal machine learning. 
-	</div>	
+	<p> <img src="img/retina.png" width="400px" style="float:left; padding: 10px">My passion with AI and vision led me to AI medicine. I am doing an internship at the AI core team of <a href="https://www.airdoc.com" target="_blank">Airdoc Corp.</a>, a pioneer in AI medicine, working on models to improve disease prediction 
+		precision based on retinal imaging. Our models help predict dozens of diseases including diabetes, glaucoma, AMD, dementia, and infarctions. My IB Extended Essay is about comparing different loss functions on retinal machine learning.
+		<a href="docs/Computer Science Extended Essay.pdf" target="_blank">Extended Essay</a>.
 
-	<div class="hanging" target="_blank">
-	</div>
-			
+	<p>My <a href="docs/CS_IA.pdf" target="_blank">CS IA</a> is a Family Medication Management system.
+		<a href="docs/CS_IA.pdf" target="_blank"><img src="img/med_box.png" width="280px" style="float:right; padding: 10px" alt="Family medication box, linked to the CS IA"></a>
+
+	<p>After a workshop with UCLA professor Ramin Ramezani, I ran my own study of how a small CNN and ResNet-18 hold up when Fashion-MNIST test images are partly corrupted. The paper was accepted to CDS_AST 2026, Applied and Computational Engineering.
+		<img src="docs/CDS_Paper.jpg" width="220px" style="float:right; padding: 10px" alt="CDS_AST 2026 acceptance certificate">
+		<a href="docs/CDS_AST_2026_Paper.pdf" target="_blank">Paper</a>,
+		<a href="docs/黄瀚岳-计算机-CPCI录用通知-CONF-CDS 2026.pdf" target="_blank">acceptance letter</a>.
+
 </p>
 <div style="clear: both;"></div> <!-- this clears the style=float: effects -->
 <p align=left>
 	<h3 id="music">Music</H3>	
 	Whenever I am tired or exhausted, music provides the magic healing power for me. I like to play piano, violin and drum. Below is our band performance at ISB annual assembly.
-	<table cellpadding=10 class="texttable"
-	<tr>
-		<td valign="top"><div style="text-align: left;float: left;padding:10px">
-		<a href="http://anthony.huangs.nets.hk/img/band.MP4">Little Time Band</a></td>
-
-	</tr>
-</table>
+	<div style="text-align: left; padding: 10px">
+		<video width="480" controls>
+		<source src="http://anthony.huangs.nets.hk/img/band.MP4" type="video/mp4" />
+		</video>
+		<br>Little Time Band
+	</div>
 </p>
 
 
+
+<p align=left>
+	<h3 id="game">Game</h3>
+	<div style="text-align: left">
+	<p>In 2024 I built a top-down ninja game in Godot at Anthony Studio @ ISB — the Evil Empire of Red Ninjas, and a gem called OmniGem.
+		<img src="img/gamecover.png" width="280px" style="float:left; padding: 10px" alt="Ninja game story screen">
+		<img src="img/game_scene01.png" width="280px" style="float:left; padding: 10px" alt="Level 2 of the ninja game">
+	</div>
+</p>
+<div style="clear: both;"></div>
+
+<p align=left>
+	<h3 id="writing">Poems</h3>
+	<div style="text-align: left">
+	<p>
+		<a href="docs/champion_works_cover.png" target="_blank"><img src="docs/champion_works_cover.png" width="240" style="float:left; padding: 6px" alt="4th Chinese Language Festival, champion's works cover"></a>
+		<a href="docs/champion_works_cicada.png" target="_blank"><img src="docs/champion_works_cicada.png" width="240" style="float:left; padding: 6px" alt="Essay, Cicada"></a>
+		<a href="docs/champion_works_flower_01.png" target="_blank"><img src="docs/champion_works_flower_01.png" width="240" style="float:left; padding: 6px" alt="Poem, Flower on the Other Shore, page 1"></a>
+		<a href="docs/champion_works_flower_02.png" target="_blank"><img src="docs/champion_works_flower_02.png" width="240" style="float:left; padding: 6px" alt="Poem, Flower on the Other Shore, page 2"></a>
+	</div>
+</p>
+<div style="clear: both;"></div>
+
+<p align=left>
+	<h3 id="bjpress">BJPress</h3>
+	<div style="text-align: left">
+	<p>Since May 2024 I have been president of Beijing Student Press. Each of these editions is 30-50 pages.
+		<a href="docs/bjpress_spring_2024.png" target="_blank"><img src="docs/bjpress_spring_2024.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Spring 2024"></a>
+		<a href="docs/bjpress_summer_2025.png" target="_blank"><img src="docs/bjpress_summer_2025.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Summer 2025"></a>
+		<a href="docs/bjpress_summer_2026.png" target="_blank"><img src="docs/bjpress_summer_2026.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Summer 2026"></a>
+		<a href="docs/bjpress_winter_2026.png" target="_blank"><img src="docs/bjpress_winter_2026.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Winter 2026"></a>
+		<a href="docs/bjpress_pub_samples.jpg" target="_blank"><img src="docs/bjpress_pub_samples.jpg" width="280px" style="float:right; padding: 10px" alt="Beijing Student Press publication samples"></a>
+	</div>
+</p>
+<div style="clear: both;"></div>
+
+<p align=left>
+	<h3 id="photography">Photography</h3>
+	<div style="text-align: left">
+	<div class="photo-row">
+		<a href="img/Photography_Street.JPG" target="_blank"><img src="img/Photography_Street.JPG" alt="Street series: willow and bridge, then a lakeside path"></a>
+		<a href="img/Photography_9.JPG" target="_blank"><img src="img/Photography_9.JPG" alt="Nine-frame still-life contact sheet"></a>
+		<a href="img/Photography_Triptych.JPG" target="_blank"><img src="img/Photography_Triptych.JPG" alt="Black-and-white leaf triptych"></a>
+	</div>
+	</div>
+</p>
+<div style="clear: both;"></div>
 
 <p align=left>
 	<h3 id="readings">Reading list</h3>

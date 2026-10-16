@@ -285,3 +285,53 @@ img {
   max-width: 100%;
   display: block;
 }
+
+img.portrait {
+  width: 240px;
+  max-width: none;
+  height: auto;
+  margin: 0;
+}
+
+table.hero {
+  width: auto;
+  border-collapse: collapse;
+}
+
+table.hero td.hero-pic {
+  width: 1%;
+  padding: 0 36px 0 0;
+  white-space: nowrap;
+}
+
+table.hero td.hero-text {
+  padding: 0;
+  text-align: left;
+}
+
+.hero-gap {
+  height: 1.4rem;
+}
+
+.photo-row {
+  clear: both;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.photo-row a {
+  flex: 1 1 0;
+  height: 220px;
+  overflow: hidden;
+  display: block;
+}
+
+.photo-row img {
+  width: 100%;
+  height: 220px;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
