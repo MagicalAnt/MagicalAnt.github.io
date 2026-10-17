@@ -82,41 +82,29 @@ Class of 2027 &nbsp;@
 		<video width="200" style="float: left; padding:10px" controls>
 		<source src="img/porcupine.mp4" type="video/mp4" />
 		</video>
-		This little cute porcupine spent one night at our place <img src="img/falcon.jpg" width="200px" style="float:right; padding: 10px">after interrupting our nightly laser-tag game by stepping on my left foot.  About a week later, while Mom took my brother and me for a walk after dinner, we saw it with two little baby porcupines playing near the bushes. 
-		I wondered what was going through her mind then seeing the trio of us :)  The falcon on the right crash-landed by our dog and us while we were doing a casual walking. It was not as excited as we were about the unplanned meeting, I could tell. We kept it for about 4 hours, performed a physical exam on it, and released it back into the sky.
+		Dad, brother and I were playing our nightly laser-tag game when this little cute hedgehot stepped onto my brother's foot, so we invited her to spend one night in our home. <img src="img/falcon.jpg" width="200px" style="float:right; padding: 10px">  Several days later, Mom took my brother and me for a walk after dinner, we saw it with two little baby hedgehots playing near the bushes. 
+		Three of us, three of them. The scene was so reflective, kind of surreal :)  The falcon on the right crash-landed by our dog while we were doing a casual walking. It was not as excited as we were about the unplanned meeting. We performed a physical exam on it, and gave its freedom of navigation back.
 	
-		<p> Cicadas are cool musicians as each of them seems to sing a distinctive song. I have classified their melodies into six schools based on their differences in voices, tunes, lengths and styles :) They are also performing artists. This amigo on the left was doing an acrobatic sit-up <img src="img/cicada_situp.jpg" width="360px" style="float:left; padding: 10px"> </img> 
-			after emerging from the old exoskeleton, before it decided to tan its color from greenish to golden, and then to black (on the right).<img src="img/cicada01.jpg" width="200px" style="float:right; padding: 10px"> </img> On the lower left is my army of 150 cicada exoskeletons, which all look alike, but upon careful examination, each has quite different poses and looks.	
-		Don't they evoke the same sense of gravitas as that of the terra-cotta warriors? Can you tell a cicada's gender from its exoskeleton (shell)? Well, I can :)<img src="img/cicada001.jpg" width="360px" style="float:left; padding: 10px">  </img>
-	I have had this natural curiosity since very young, probably under the influence of my father. 
+		<p> Cicadas are cool musicians, and each of them seems to excel at a distinctive song. I have classified their melodies into six schools based on their differences in voices, tunes, lengths and styles :) They are also performing artists. I brought home this crawling amigo from the woods, and hours later it was doing an acrobatic sit-up <img src="img/cicada_situp.jpg" width="360px" style="float:left; padding: 10px"> </img> 
+			after emerging from the old exoskeleton, before tanning its color from greenish to golden, and then to black (on the right).<img src="img/cicada01.jpg" width="200px" style="float:right; padding: 10px"> </img> On the lower left is our curated army of 150 cicada exoskeletons, which all look alike at first look, but upon careful examination, each has quite different poses and looks, like the terra-cotta warriors. Can you tell a cicada's gender from its exoskeleton (shell)? Well, I can :)<img src="img/cicada001.jpg" width="360px" style="float:left; padding: 10px">  </img>
+	
+	<p>Over time, I have become strongly interested in vision: both human vision and computer vision. When volunteering to read for the blind kids 
+	at <a href="http://www.hongdandan.org.cn/">HongDanDan Charity Center for the Visually Impaired Children</a>, I wanted to do something for the kids. So I developed an AI Navigation cane POC system.
+   <p><img src="img/smart_cane.jpg" width="200px" style="float:right; padding: 10px"></img> The cane should be able to &quot;see&quot; approaching objects and &quot;alert&quot; the user, so a camera and a speaker were added. A Raspberry PI4B chip was 
+installed as the brain, with Twister OS (a linux variant).<img src="img/box02.jpg" width="300px" style="float:right; padding: 10px"></img> How to detect a object&#39;s distance like a bat&#39;s echo-locator? I found ultrasonic sensors.
+ But an ultrasonic sensor receives ECHOs at 3.5 volts, different than the chip&#39;s working voltage of 5.<p> After some research, I decided to design a circuit to adjust the voltage using a breadboard and jumpers&#39; approach. <img src="img/total.jpg" width="300px" style="float:right; padding: 10px"></img>
+ Then a new problem came up: how to recognize a car&#39;s image as a car? After more research, I employed Google coco object model and tensorflow-lite. With a trial-and-error approach, much learning, and many mini-innovations along, 
+ the final system worked well. The cane can detect approaching objects and alert the user with a beep sound.
 
-	<p>I like to create things. I once built among other things a turtle-walking harness that had allowed my pet turtle to play around freely in the pond while my brother and I easily tracked its whereabouts. 
-	<p>Over time, my curiosity and creativity have made me to become obsessed with AI and vision: human vision and computer vision. When volunteering to read for the blind kids 
-	at <a href="http://www.hongdandan.org.cn/">HongDanDan Charity Center for the Visually Impaired</a>, I came to realize that the typical 
-   cane used by the blind is just dumb and at best a stiff extension to one&#39;s arms. Thus, it was natural for me to come up with the idea of an AI Navigation cane POC system in the Robotics class. 
-   <p><img src="img/smart_cane.jpg" width="200px" style="float:left; padding: 10px"></img> The ideal system should be able to &quot;see&quot; the approaching objects and &quot;warn&quot; the user, so a webcam and speakers were added. To complete the reflex arc, a &quot;brain&quot; was needed, therefore a Raspberry PI4B chip was 
-installed, with Twister OS (a linux version for embedded systems).<img src="img/box02.jpg" width="300px" style="float:right; padding: 10px"></img> But how to detect an approaching object&#39;s distance? Searching for something like a bat&#39;s echo-locator, I was pleased to find that ultrasonic sensors could work.
- But an ultrasonic sensor receives ECHOs at 3.5 volts, different than the chip&#39;s working voltage of 5.<p> After some brainstorming, I designed a circuit to adjust the voltage using a breadboard and jumpers&#39; approach. <img src="img/total.jpg" width="300px" style="float:right; padding: 10px"></img>
- Then a new problem came up: how to recognize a car&#39;s image as a car? After extensive research, I employed Google coco object model and tensorflow-lite to achieve that aim. Next, how to extract the webcam video frame at 
- real-time? How to convert warning words to voices? Such problems surfaced one after another, all seeming invincible initially. With a trial-and-error approach, much learning, and many mini-innovations along, 
- I was able to pull it off. The final system worked beautifully.
-
-Through this I have learned that creativity alone does not necessarily make me a successful innovator, and that it requires a chaperone named &quot;hard work&quot; to recruit good luck and serendipity. 
-<p>One of the key technologies used was AI driven object recognition from a real-time video frame.
-	<p> <img src="img/retina.png" width="400px" style="float:left; padding: 10px">My passion with AI and vision led me to AI medicine. I am doing an internship at the AI core team of <a href="https://www.airdoc.com" target="_blank">Airdoc Corp.</a>, a pioneer in AI medicine, working on models to improve disease prediction 
-		precision based on retinal imaging. Our models help predict dozens of diseases including diabetes, glaucoma, AMD, dementia, and infarctions. My IB Extended Essay is about comparing different loss functions on retinal machine learning.
-		<a href="docs/Computer Science Extended Essay.pdf" target="_blank">Extended Essay</a>.
-
-	<p>My <a href="docs/CS_IA.pdf" target="_blank">CS IA</a> is a Family Medication Management system.
-		<a href="docs/CS_IA.pdf" target="_blank"><img src="img/med_box.png" width="280px" style="float:right; padding: 10px" alt="Family medication box, linked to the CS IA"></a>
-
-	<p>After a workshop with UCLA professor Ramin Ramezani, I ran my own study of how a small CNN and ResNet-18 hold up when Fashion-MNIST test images are partly corrupted. The paper was accepted to CDS_AST 2026, Applied and Computational Engineering.
-		<img src="docs/CDS_Paper.jpg" width="220px" style="float:right; padding: 10px" alt="CDS_AST 2026 acceptance certificate">
-		<a href="docs/CDS_AST_2026_Paper.pdf" target="_blank">Paper</a>,
+<p>One of the key technologies used was computer vision from a real-time video frame.
+	<p> <img src="img/retina.png" width="400px" style="float:left; padding: 10px">My passion with vision furthered. I am doing an internship at the AI core team of <a href="https://www.airdoc.com" target="_blank">Airdoc Corp.</a>, a pioneer in AI medicine, working on models to perform disease prediction 
+	 based on retinal imaging. Our models help predict dozens of diseases including diabetes, glaucoma, AMD, dementia, and infarctions. My <a href="docs/Computer Science Extended Essay.pdf" target="_blank">IB Extended Essay</a> is about comparing different loss functions on neural network's age prediction using retinal imaging.
+		
+	<p>After a workshop with UCLA professor Ramin Ramezani, I ran my own study of how a small CNN and ResNet-18 hold up when Fashion-MNIST test images are partly corrupted. The results led to a paper, <i><a href="docs/CDS_AST_2026_Paper.pdf" target="_blank">Robustness of Convolutional Neural Networks to Partial
+Test-Set Image Corruption on Fashion-MNIST</a></i>, accepted by CDS_AST 2026, Applied and Computational Engineering. Here is the
 		<a href="docs/黄瀚岳-计算机-CPCI录用通知-CONF-CDS 2026.pdf" target="_blank">acceptance letter</a>.
-
+		
 </p>
-<div style="clear: both;"></div> <!-- this clears the style=float: effects -->
 <p align=left>
 	<h3 id="music">Music</H3>	
 	Whenever I am tired or exhausted, music provides the magic healing power for me. I like to play piano, violin and drum. Below is our band performance at ISB annual assembly.
@@ -133,17 +121,17 @@ Through this I have learned that creativity alone does not necessarily make me a
 <p align=left>
 	<h3 id="game">Game</h3>
 	<div style="text-align: left">
-	<p>In 2024 I built a top-down ninja game in Godot at Anthony Studio @ ISB — the Evil Empire of Red Ninjas, and a gem called OmniGem.
 		<img src="img/gamecover.png" width="280px" style="float:left; padding: 10px" alt="Ninja game story screen">
 		<img src="img/game_scene01.png" width="280px" style="float:left; padding: 10px" alt="Level 2 of the ninja game">
 	</div>
 </p>
 <div style="clear: both;"></div>
+<p align="left">A ninja game I built — the Evil Empire of Red Ninjas.</p>
 
 <p align=left>
 	<h3 id="writing">Poems</h3>
 	<div style="text-align: left">
-	<p>
+	<p> Some of the award-winning works I wrote for the 4th Chinese Language Festival:
 		<a href="docs/champion_works_cover.png" target="_blank"><img src="docs/champion_works_cover.png" width="240" style="float:left; padding: 6px" alt="4th Chinese Language Festival, champion's works cover"></a>
 		<a href="docs/champion_works_cicada.png" target="_blank"><img src="docs/champion_works_cicada.png" width="240" style="float:left; padding: 6px" alt="Essay, Cicada"></a>
 		<a href="docs/champion_works_flower_01.png" target="_blank"><img src="docs/champion_works_flower_01.png" width="240" style="float:left; padding: 6px" alt="Poem, Flower on the Other Shore, page 1"></a>
@@ -155,7 +143,8 @@ Through this I have learned that creativity alone does not necessarily make me a
 <p align=left>
 	<h3 id="bjpress">BJPress</h3>
 	<div style="text-align: left">
-	<p>Since May 2024 I have been president of Beijing Student Press. Each of these editions is 30-50 pages.
+	<p>Since May 2024 I have been president of Beijing Student Press, a highly popular campus publication. Each of these editions is 30-50 pages.
+		<p></p>
 		<a href="docs/bjpress_spring_2024.png" target="_blank"><img src="docs/bjpress_spring_2024.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Spring 2024"></a>
 		<a href="docs/bjpress_summer_2025.png" target="_blank"><img src="docs/bjpress_summer_2025.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Summer 2025"></a>
 		<a href="docs/bjpress_summer_2026.png" target="_blank"><img src="docs/bjpress_summer_2026.png" width="160px" style="float:left; padding: 10px" alt="Beijing Student Press, Summer 2026"></a>
@@ -168,7 +157,10 @@ Through this I have learned that creativity alone does not necessarily make me a
 <p align=left>
 	<h3 id="photography">Photography</h3>
 	<div style="text-align: left">
-	<div class="photo-row">
+		<p>Some of my photography works. I enjoy capturing the beauty of nature and the essence of human emotions through my lens. Each photograph tells a story.</p>
+
+		<div class="photo-row">			
+
 		<a href="img/Photography_Street.JPG" target="_blank"><img src="img/Photography_Street.JPG" alt="Street series: willow and bridge, then a lakeside path"></a>
 		<a href="img/Photography_9.JPG" target="_blank"><img src="img/Photography_9.JPG" alt="Nine-frame still-life contact sheet"></a>
 		<a href="img/Photography_Triptych.JPG" target="_blank"><img src="img/Photography_Triptych.JPG" alt="Black-and-white leaf triptych"></a>
@@ -190,10 +182,9 @@ Through this I have learned that creativity alone does not necessarily make me a
 
 <p align=left>
 	<h3 id="sports">Sports</h3>
-	<img src="img/terra.jpg" width="200" style="float:left; padding: 10px">Wherever I go, I always carry a frisbee. When hanging out, it often assures a fun ultimate game;
-	when hiking, it is the designated water tray for my dog; when in the woods, it becomes my power
-	shield; when napping, it is my sleepy pillow; when debugging code, it is the preferred mouse pad as
-	it helps me focus better:) A member of my high school's swimming team, I also love American Football, Ping-pong, Basketball and Badminton.
+	<img src="img/terra.jpg" width="200" style="float:left; padding: 10px">Wherever I go, I always carry a frisbee. When hanging out, it often leads to a fun ultimate game;
+	when hiking, it is the designated water tray for our dogs; when in the woods, it becomes my power
+	shield; when napping, it is my sleepy pillow; when debugging code, it is the preferred mouse pad. A member of my high school's swimming team, I also love American Football, Ping-pong, Basketball and Badminton.
 </p>
 
 <div style="clear: both;"></div> <!-- this clears the style=float: effects -->
@@ -202,7 +193,7 @@ Through this I have learned that creativity alone does not necessarily make me a
 	<h3 id="anthony">45 seconds of me (coming)</H3>
 	<!-- <div  style="text-align: center;">
 		<video  width="520" style="margin-top:15px;" controls>
-		<source src="james_v.mp4" type="video/mp4" />
+		<source src="anthony_v.mp4" type="video/mp4" />
 		</video>
 	</div> -->
 
