@@ -90,9 +90,16 @@ Class of 2027 &nbsp;@
 	
 	<p>Over time, I have become strongly interested in vision: both human vision and computer vision. When volunteering to read for the blind kids 
 	at <a href="http://www.hongdandan.org.cn/">HongDanDan Charity Center for the Visually Impaired Children</a>, I wanted to do something for the kids. So I developed an AI Navigation cane POC system.
-   <p><img src="img/smart_cane.jpg" width="200px" style="float:right; padding: 10px"></img> The cane should be able to &quot;see&quot; approaching objects and &quot;alert&quot; the user, so a camera and a speaker were added. A Raspberry PI4B chip was 
-installed as the brain, with Twister OS (a linux variant).<img src="img/box02.jpg" width="300px" style="float:right; padding: 10px"></img> How to detect a object&#39;s distance like a bat&#39;s echo-locator? I found ultrasonic sensors.
- But an ultrasonic sensor receives ECHOs at 3.5 volts, different than the chip&#39;s working voltage of 5.<p> After some research, I decided to design a circuit to adjust the voltage using a breadboard and jumpers&#39; approach. <img src="img/total.jpg" width="300px" style="float:right; padding: 10px"></img>
+	<div class="cane-row">
+		<div class="cane-stack">
+			<img src="img/box02.jpg" alt="Raspberry Pi box for the cane">
+			<img src="img/total.jpg" alt="Cane circuit on a breadboard">
+		</div>
+		<img class="cane-pic" src="img/smart_cane.jpg" alt="AI Navigation cane">
+	</div>
+   <p>The cane should be able to &quot;see&quot; approaching objects and &quot;alert&quot; the user, so a camera and a speaker were added. A Raspberry PI4B chip was 
+installed as the brain, with Twister OS (a linux variant). How to detect a object&#39;s distance like a bat&#39;s echo-locator? I found ultrasonic sensors.
+ But an ultrasonic sensor receives ECHOs at 3.5 volts, different than the chip&#39;s working voltage of 5. After some research, I decided to design a circuit to adjust the voltage using a breadboard and jumpers&#39; approach.
  Then a new problem came up: how to recognize a car&#39;s image as a car? After more research, I employed Google coco object model and tensorflow-lite. With a trial-and-error approach, much learning, and many mini-innovations along, 
  the final system worked well. The cane can detect approaching objects and alert the user with a beep sound.
 

@@ -335,3 +335,36 @@ table.hero td.hero-text {
   object-position: center;
   display: block;
 }
+
+.cane-row {
+  float: right;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0 0 10px 16px;
+  height: 420px;
+}
+
+.cane-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+  height: 100%;
+}
+
+.cane-stack img {
+  width: 100%;
+  height: calc(50% - 5px);
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cane-row img.cane-pic {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
+}
